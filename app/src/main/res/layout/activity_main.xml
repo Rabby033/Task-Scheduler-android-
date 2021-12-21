@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center_horizontal"
+                android:text="Full Tasklist here"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgroud"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/noDataImage"
+                android:layout_width="292dp"
+                android:layout_height="305dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/relaxtext"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="400dp"
+                android:gravity="center_horizontal"
+                android:text="WOW,you have no task today!!"
+                android:textSize="18sp"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTask"
+            android:layout_gravity="bottom|right"
+            android:background="#071660"
+            android:src="@drawable/ad"
+            app:fabSize="auto"
+            
+            android:layout_marginBottom="15dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

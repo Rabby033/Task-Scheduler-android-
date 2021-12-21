@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:backgroundTint="#5E9BE6"
+        android:padding="10dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img"
+                android:layout_width="89dp"
+                android:layout_height="95dp"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:id="@+id/ans"
+                android:layout_width="315dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/img"
+                android:paddingTop="15dp"
+                android:text="User: abc@gmail.com"
+                android:textColor="#0C0C0C"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="295dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/ans"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@id/img"
+                android:text="Number of task: 07"
+                android:textColor="#100F0F"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
